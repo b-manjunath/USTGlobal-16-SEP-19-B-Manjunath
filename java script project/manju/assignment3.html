@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("To find the circumfrence of circle");
+        function circumfrence(num)                              //named function
+        {
+            var out=2*3.14*num;
+            console.log("the circumfrence of the circle of radious "+num+" is "+out);
+        }
+
+        circumfrence(3);
+
+        var sub=function(num)                                   //function expression
+                {
+                    var out=2*3.14*num;
+                    console.log("the circumfrence of the circle of radious "+num+" is "+out);
+                }
+        sub(5);
+
+        (function(num)                                  //self invoked function
+        {
+            var out=2*3.14*num;
+            console.log("the circumfrence of the circle of radious "+num+" is "+out);
+        })(5)
+
+        var div=num=>
+        {
+            var out=2*3.14*num;
+            console.log("the circumfrence of the circle of radious "+num+" is "+out);
+        }
+        div(5);
+
+        
+    
+    
+    
+    
+    </script>
+</body>
+</html>

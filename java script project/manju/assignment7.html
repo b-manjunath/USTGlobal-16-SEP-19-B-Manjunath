@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment 7</title>
+</head>
+<body>
+    <script>
+        console.log("=====for loop======");
+        var arr1=[1,5,'jison',3,'james'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr2=[0,2,'manu',3,'madhav'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr3=[1,5,'rish',3,'midhu'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr4=[1,5,'thorappz',3,'arju'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr5=[1,5,'aravi',3,'shon'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr6=[1,5,'sam',3,'arnold'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr7=[1,5,'jison',3,'arnold'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+
+        var arr8=[1,5,'sam',3,'arnold'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr9=[1,5,'jison',3,'james'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+        var arr10=[1,5,'sam',3,'arnold'];
+        for(var i=0;i<arr1.length;i++)
+        {
+            console.log(i,'th value = ',arr1[i]);
+        }
+ 
+        console.log("======for of========");
+
+        var car=['lambo','ferrari','audi','bmw','benz'];
+        for(var value of car)
+        {
+            console.log('value of car =',value);
+        }
+        var dog=['german','rot','pug','pomer','lab'];
+        for(var value of dog)
+        {
+            console.log("value of dogs =",value)
+        }
+        var cricket=['sachin','dhoni','raina','uvi','kholi'];
+        for(var value of cricket)
+        {
+            console.log("name of players =",value);
+        }
+        var football=['ronaldo','messi','neymer','mpappe','ibra'];
+        for(var value of football)
+        {
+            console.log("name of footballplayers =",value);
+        }
+        var football=['ronaldo','messi','neymer','mpappe','ibra'];
+        for(var value of football)
+        {
+            console.log("name of footballplayers =",value);
+        }
+        var games=['crick','football','batminton','basketball','vollyball'];
+        for(var value of games)
+        {
+            console.log("name of games =",value);
+        }
+        var languages=['java','JS','sql','j2ee','spring'];
+        for(var value of languages)
+        {
+            console.log("name of programing languages =",value);
+        }
+        
+        var car=['lambo','ferrari','audi','bmw','benz'];
+        for(var value of car)
+        {
+            console.log('value of car =',value);
+        }
+        var dog=['german','rot','pug','pomer','lab'];
+        for(var value of dog)
+        {
+            console.log("value of dogs =",value)
+        }
+        var cricket=['sachin','dhoni','raina','uvi','kholi'];
+        for(var value of cricket)
+        {
+            console.log("name of players =",value);
+        }
+        var football=['ronaldo','messi','neymer','mpappe','ibra'];
+        for(var value of football)
+        {
+            console.log("name of footballplayers =",value);
+        }   
+
+        console.log("==============for in loop==========");
+
+        var car=['lambo','ferrari','audi','bmw','benz'];
+        {
+            for(var index in car)
+            console.log('value of car =',car[index]);
+        }
+        var dog=['german','rot','pug','pomer','lab'];
+        for(var index in dog)
+        {
+            console.log("value of dogs =",dog[index])
+        }
+        var cricket=['sachin','dhoni','raina','uvi','kholi'];
+        for(var index in cricket)
+        {
+            console.log("name of players =",cricket[index]);
+        }
+        var football=['ronaldo','messi','neymer','mpappe','ibra'];
+        for(var index in football)
+        {
+            console.log("name of footballplayers =",football[index]);
+        }
+        var football=['ronaldo','messi','neymer','mpappe','ibra'];
+        for(var index in football)
+        {
+            console.log("name of footballplayers =",football[index]);
+        }
+        var games=['crick','football','batminton','basketball','vollyball'];
+        for(var index in games)
+        {
+            console.log("name of games =",games[index]);
+        }
+        var languages=['java','JS','sql','j2ee','spring'];
+        for(var index in languages)
+        {
+            console.log("name of programing languages =",languages[index]);
+        }
+
+        console.log("====== forin loop object========");
+
+        var car={
+            name:"i20",
+            model:"asta",
+            tyre:4,
+        };
+        for(var index in car)
+        {
+            console.log(index ,"of the car is ",car[index]);
+        }
+
+        var v8={
+            devoloperof:"googele",
+           written:"c++"
+        };
+        for(var index in v8)
+        {
+            console.log(index, ' v8 is ',v8[index]);
+        }
+
+        var person={
+            name:'jison',
+            age:24,
+        }
+        for( var index in person)
+        {
+            console.log(index,'of person is ',person[index]);
+        }
+
+        var  bike={
+            name:'CBR',
+            cc:250,
+            tyre:2
+        };
+        for(var index in bike)
+        {
+            console.log(index,'of bike is ',bike[index]);
+        }
+
+        var  bike={
+            name:'CBR',
+            cc:250,
+            tyre:2
+        };
+        for(var index in bike)
+        {
+            console.log(index,'of bike is ',bike[index]);
+        }
+        var  bus={
+            name:'mike',
+            age:21,
+            type:'single'
+        };
+        for(var index in person)
+        {
+            console.log(index,'of person is ',person[index]);
+        }
+        var  bike={
+            name:'CBR',
+            cc:250,
+            tyre:2
+        };
+        for(var index in bike)
+        {
+            console.log(index,'of bike is ',bike[index]);
+        }
+
+        console.log('==========for each loop============');
+
+        var item=[1,45,2,7,5];
+        item.forEach(function(value,index)
+        {
+            console.log(value);
+        })
+
+        var vehicle=[{  
+                        item:'car',
+                        tyre:4,
+                    },
+                    {
+                        item:'bike',
+                        tyre:2
+                    },
+                    {
+                        item:'cycle',
+                        tyre:2,
+                    }];
+        vehicle.forEach(function(value,index)
+        {
+            console.log('value is ',vehicle[index].item);
+        });
+
+        var cricket=[{
+                        country:'india',
+                        captain:'kohli',
+                        worldcups:2,
+                    },
+                    {
+                        country:'australia',
+                        captain:'finch',
+                        worldcups:5
+                    }];
+        cricket.forEach(function(vaue,index)
+        {
+            console.log('country is ',cricket[index].country,'and won',cricket[index].worldcups,' worldcups');
+        })
+
+        var movies=[{
+                        name:'magadheera',
+                        actor:'nagarjuna',
+                        awards:2,
+                    },
+                    {
+                        name:'holi',
+                        actor:'arjun',
+                        awards:5
+                    }];
+        movies.forEach(function(vaue,index)
+        {
+            console.log('name of movie is ',movies[index].name);
+        })
+
+        var football=[{
+                        name:'ronaldo',
+                        country:'portugal',
+                        ballendor:5,
+                    },
+                    {
+                        name:'messi',
+                        country:'argentina',
+                        ballendor:5,
+                    }];
+        football.forEach(function(vaue,index)
+        {
+            console.log('name  is ',football[index].name);
+        })
+
+    var names=['jison','james','jolly','jeena','jerin'];
+    names.forEach(function(value,index)
+    {
+        console.log("name is ",value);
+    })
+
+    
+    var fruits=['orange','apple','mango','jackfruit','mosambi'];
+    fruits.forEach(function(element,index)
+    {
+        console.log("fruit is ",element);
+    })
+
+    var movies=[{
+                        name:'magadheera',
+                        actor:'nagarjuna',
+                        awards:2,
+                    },
+                    {
+                        name:'holi',
+                        actor:'arjun',
+                        awards:5
+                    }];
+        movies.forEach(function(vaue,index)
+        {
+            console.log('name of movie is ',movies[index].name);
+        })
+
+        var cricket=[{
+                        country:'india',
+                        captain:'kohli',
+                        worldcups:2,
+                    },
+                    {
+                        country:'australia',
+                        captain:'finch',
+                        worldcups:5
+                    }];
+        cricket.forEach(function(vaue,index)
+        {
+            console.log('country is ',cricket[index].country,'and won',cricket[index].worldcups,' worldcups');
+        })
+
+        var names=['jison','james','jolly','jeena','jerin'];
+    names.forEach(function(value,index)
+    {
+        console.log("name is ",value);
+    })
+
+
+
+    </script>
+</body>
+</html>

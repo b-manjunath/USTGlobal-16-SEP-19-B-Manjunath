@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment4</title>
+</head>
+<body>
+    <script>
+        console.log("======fibannocii series=======");
+        function fibanocci(count)               //named function
+        {
+            var n1=0;
+            var n2=1;
+            var n3=null;
+            console.log(n1);
+            console.log(n2);
+
+            for(var i=2;i<count;i++)
+            {
+                var n3=n1+n2;
+                console.log(n3);
+                n1=n2;
+                n2=n3;
+        }
+        }
+        fibanocci(10);
+        console.log("===================");
+
+        var sub=function(count)             //function expression
+                {
+                    var n1=0;
+                    var n2=1;
+                    var n3=null;
+                    console.log(n1);
+                    console.log(n2);
+
+                    for(var i=2;i<count;i++)
+                    {
+                        var n3=n1+n2;
+                        console.log(n3);
+                        n1=n2;
+                        n2=n3;
+                    }
+                }
+        sub(20);
+        console.log("============");
+
+        (function(count)                    //self invoked function
+        {
+            var n1=0;
+            var n2=1;
+            var n3=null;
+            console.log(n1);
+            console.log(n2);
+
+            for(var i=2;i<count;i++)
+            {
+                var n3=n1+n2;
+                console.log(n3);
+                n1=n2;
+                n2=n3;
+        }
+        })(5)
+            console.log("===================")
+        var div=(count)=>                 //fat arrow function
+        {
+            var n1=0;
+            var n2=1;
+            var n3=null;
+            console.log(n1);
+            console.log(n2);
+
+            for(var i=2;i<count;i++)
+            {
+                var n3=n1+n2;
+                console.log(n3);
+                n1=n2;
+                n2=n3;
+            }
+        }
+        div(6);
+    </script>
+</body>
+</html>

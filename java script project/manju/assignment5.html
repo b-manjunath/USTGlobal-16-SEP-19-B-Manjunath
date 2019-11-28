@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array sum</title>
+</head>
+<body>
+    <script>
+        function add()                          //named function
+        {   var sum=0;
+            var arr=[10,50,20,20];
+            for(var i=0;i<arr.length;i++)
+            {
+                sum=sum+arr[i];
+            }
+            console.log("sum = ",sum);
+        }
+        add();
+
+        var sub=function()                      //function expression
+                {
+                    var sum=0;
+                    var arr=[10,50,20,20];
+                for(var i=0;i<arr.length;i++)
+                {
+                    sum=sum+arr[i];
+                }
+                console.log("sum = ",sum);
+                }
+        sub();
+
+        (function()                             //self invoked function
+        {
+            var sum=0;
+                    var arr=[10,50,20,20];
+                for(var i=0;i<arr.length;i++)
+                {
+                    sum=sum+arr[i];
+                }
+                console.log("sum = ",sum);
+        })()
+
+        var div=()=>                            //fat arrow function
+                {
+                 var sum=0;
+                 var arr=[10,50,20,20];
+                for(var i=0;i<arr.length;i++)
+                {
+                    sum=sum+arr[i];
+                }
+                console.log("sum = ",sum);
+                }
+        div();
+
+
+        console.log("==========prime or not=========");
+    
+    function  prime(num)                           //named function
+    {
+        var count=0;
+        for(var i=2;i<num/2;i++)
+        {
+            if(num%i==0)
+                {
+                    count++;
+                }
+        }
+        if(count>0)
+        {
+            console.log("the number ",num," is not prime");
+        }
+        else{
+            console.log("the number ",num," is prime");
+        }
+    }
+    prime(10);
+
+    var sub=function(num)
+            {
+                var count=0;
+                for(var i=2;i<num/2;i++)
+                {
+                    if(num%i==0)
+                        {
+                            count++;
+                        }
+                }
+                if(count>0)
+                {
+                    console.log("the number ",num," is not prime");
+                }
+                else{
+                    console.log("the number ",num," is prime");
+                }  
+            }
+    sub(15);
+
+    (function(num)                      //self invoked function
+    {
+        var count=0;
+                for(var i=2;i<num/2;i++)
+                {
+                    if(num%i==0)
+                        {
+                            count++;
+                        }
+                }
+                if(count>0)
+                {
+                    console.log("the number ",num," is not prime");
+                }
+                else{
+                    console.log("the number ",num," is prime");
+                }  
+    })(13)
+
+    var div=(num)=>
+            {
+                var count=0;
+                for(var i=2;i<num/2;i++)
+                {
+                    if(num%i==0)
+                        {
+                            count++;
+                        }
+                }
+                if(count>0)
+                {
+                    console.log("the number ",num," is not prime");
+                }
+                else{
+                    console.log("the number ",num," is prime");
+                }  
+            }
+    div(30);        
+
+    </script>
+</body>
+</html>

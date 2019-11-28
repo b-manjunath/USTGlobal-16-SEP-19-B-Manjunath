@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment 9</title>
+</head>
+<body>
+    <script>
+        
+        let product=[{
+                        item :'shoes',
+                        price:2000,
+                    },
+                    {
+                        item:'shirts',
+                        price:1000,
+                    },
+                    {
+                        item:'football',
+                        price:800,
+                    },
+                    {
+                        item:'bangle',
+                        price:500,
+                    },
+                    {
+                        item:'watch',
+                        price:1200,
+                    },
+                    {
+                        item:'bag',
+                        price:500,
+                    },
+                    {
+                        item:'pants',
+                        price:700,
+                    },
+                    {
+                        item:'sandals',
+                        price:1300,
+                    },
+                    {
+                        item:'laptop',
+                        price:40000,
+                    },
+                    {
+                        item:'bottle',
+                        price:100,
+                    },
+                    {
+                        item:'spectacles',
+                        price:1400,
+                     }];
+
+                
+
+                    const arr=  product.map(value=>{
+                        const container={};
+                          container.item=value.item;
+                          container.id=value.id;
+                          container.price=value.price+ 300;
+                          return container;
+
+                      })
+                      console.log(arr);
+
+                    function f1(value,index,array){
+                        if(value.price>2500){
+                            return array;
+                        }
+                    }
+                    const k1=product.filter(f1);
+                    console.log(k1);
+    
+     
+    </script>
+</body>
+</html>
