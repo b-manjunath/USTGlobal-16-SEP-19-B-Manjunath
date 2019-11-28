@@ -1,0 +1,55 @@
+h1
+{
+    text-align: center;
+   margin-right: 350px;
+}
+h2{
+    
+    text-align: center;
+   margin-right: 350px;
+}
+h3{
+    text-align: center;
+    margin-right: 350px;
+}
+input[type='search']{ 
+    margin: 20px,0px,0px,100px;
+    width:500px; 
+   height: 39px;
+   border: 1px solid black;
+   border-radius: 40px;
+   margin: 21px 10000px 0px 450px;
+}
+p{
+    text-align: center;
+    margin-right: 350px; 
+    
+}
+input[type="search"]:focus{
+    outline:none;}
+form{
+        background-image: url('css/images/images\ \(1\).jpeg');
+        background-size: cover;
+        background-color: blueviolet;
+        color: black;
+        height: 550px;
+         width: 1820px;
+    }
+ img{
+        height: 300px;
+        width: 350px;
+        
+        cursor: pointer;
+    }
+/* img:hover{ */
+        /* transform: scale(1.1,1.1); */
+        /*  */
+    /* } */
+    a{
+        color: black;
+        margin-right: 22px;
+        padding: 0 2px 10px;
+        text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    }
