@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;studentapp/src/com/ustglobal/studentapp/qspiders/selenium.java&apos; to &apos;Selenium.java&apos;" description="Rename resource &apos;selenium.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/ustglobal/studentapp/qspiders/selenium.java" name="Selenium.java" stamp="1571902073544" updateReferences="true"/>
+</session>

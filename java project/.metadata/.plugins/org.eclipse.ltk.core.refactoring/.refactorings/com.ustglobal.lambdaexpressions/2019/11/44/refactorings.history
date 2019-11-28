@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.ustglobal.lambdaexpressions/src/com/ustglobal/lambdaexpressions/TestGreetingInterface.java&apos; to &apos;TestGreeting.java&apos;" description="Rename resource &apos;TestGreetingInterface.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/ustglobal/lambdaexpressions/TestGreetingInterface.java" name="TestGreeting.java" stamp="1572588381960" updateReferences="true"/>
+</session>
