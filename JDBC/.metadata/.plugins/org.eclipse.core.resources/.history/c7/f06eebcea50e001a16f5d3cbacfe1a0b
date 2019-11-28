@@ -1,0 +1,7 @@
+package com.ustglobal.jdbcproject;
+
+public class Insert {
+	public static void main(String[] args) {
+
+	}
+}

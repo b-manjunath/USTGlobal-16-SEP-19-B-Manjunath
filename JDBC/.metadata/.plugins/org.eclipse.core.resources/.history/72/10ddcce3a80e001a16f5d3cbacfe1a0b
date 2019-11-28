@@ -1,0 +1,31 @@
+package com.ustglobal.jdbcproject;
+
+import java.io.ObjectInputStream.GetField;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+import com.mysql.jdbc.Driver;
+
+public class Insert {
+	public static void main(String[] args) {
+
+		Connection conn = null;
+		Statement stmt = null;
+
+		try {
+			//Driver driver = new Driver();
+			//DriverManager.registerDriver(driver);
+			Class.forName("com.mysql.jdbc.Driver");
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3307?user=root&password=root");
+			stmt=conn.createStatement();
+			
+			String sql="insert into project values(1,'manju',99999,'atp')";
+			
+			
+
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
