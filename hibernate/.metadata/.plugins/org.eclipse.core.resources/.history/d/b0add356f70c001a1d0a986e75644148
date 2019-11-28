@@ -1,0 +1,7 @@
+package com.ustglobal.jpawithhibernat.manytoone;
+
+public class Pencil {
+	private int pid;
+	private String color;
+
+}

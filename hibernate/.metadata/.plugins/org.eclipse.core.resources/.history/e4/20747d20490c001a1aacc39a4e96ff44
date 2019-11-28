@@ -1,0 +1,19 @@
+package com.ustglobal.jpawithhibernateapp.dto;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+public class UpdateDemo {
+	public static void main(String[] args) {
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("Test");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		String jpql = " update ProductInfo set pname='Watch' where pid=1";
+		Query query =entityManager.createQuery(jpql);
+		int result = query.executeUpdate();
+		System.out.println(result);
+
+		EntityManager.close();
+	}
+}

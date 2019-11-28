@@ -1,0 +1,13 @@
+package com.ustglobal.jpawithhibernateapp;
+
+import javax.persistence.Persistence;
+
+public class RemoveObject {
+	public static void main(String[] args) {
+
+		Persistence
+		
+		
+		
+	}// end of main method
+}// end of class

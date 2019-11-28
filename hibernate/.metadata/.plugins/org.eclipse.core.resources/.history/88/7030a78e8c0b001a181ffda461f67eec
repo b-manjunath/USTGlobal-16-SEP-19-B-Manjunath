@@ -1,0 +1,19 @@
+package com.ustglobal.jpawithhibernateapp;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.ustglobal.jpawithhibernateapp.dto.ProductInfo;
+
+public class RemoveDemo {
+	public static void main(String[] args) {
+
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory(persistenceUnitName);
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		entityManager.find(ProductInfo.class, 20);
+		
+		
+		
+	}// end of main method
+}// end of class

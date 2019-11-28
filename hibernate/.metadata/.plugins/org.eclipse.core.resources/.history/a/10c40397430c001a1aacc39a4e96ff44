@@ -1,0 +1,7 @@
+package com.ustglobal.jpawithhibernat.jpql;
+
+public class RetriveWithJpql {
+	public static void main(String[] args) {
+
+	}
+}

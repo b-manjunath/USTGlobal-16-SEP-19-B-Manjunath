@@ -1,0 +1,8 @@
+package com.ustglobal.jpawithhibernateapp.dto;
+
+public class ProductInfo {
+	private int pid;
+	private String pname;
+	private int quantity;
+	
+}

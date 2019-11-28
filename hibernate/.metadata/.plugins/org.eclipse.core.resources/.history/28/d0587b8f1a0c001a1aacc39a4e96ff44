@@ -1,0 +1,5 @@
+package com.ustglobal.productdetails.dto;
+
+public class ProductDetails {
+
+}

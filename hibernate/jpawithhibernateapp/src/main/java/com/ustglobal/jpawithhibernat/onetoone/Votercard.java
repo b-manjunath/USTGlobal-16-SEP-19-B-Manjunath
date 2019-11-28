@@ -1,0 +1,28 @@
+package com.ustglobal.jpawithhibernat.onetoone;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import lombok.Data;
+import lombok.ToString.Exclude;
+
+@Data
+@Entity
+@Table(name="votercard")
+public class Votercard {
+	@Id
+	@Column
+	private int vid;
+	@Column
+	private String name;
+	@Exclude
+	@OneToOne(mappedBy = "votercard")
+	private Person person;
+	
+
+
+
+}

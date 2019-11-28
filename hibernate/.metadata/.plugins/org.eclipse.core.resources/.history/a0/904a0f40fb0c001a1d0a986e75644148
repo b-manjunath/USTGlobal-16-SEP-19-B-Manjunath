@@ -1,0 +1,19 @@
+package com.ustglobal.jpawithhibernat.manytoone;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="pencilbox")
+public class PencilBox {
+
+	@Column
+	private int bid;
+
+	@Column
+	private String brand;
+}

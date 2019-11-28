@@ -1,0 +1,5 @@
+package com.ustglobal.jpawithhibernat.manytoone;
+
+public class TestManyToOne {
+
+}

@@ -1,0 +1,12 @@
+package com.ustglobal.jpawithhibernat.jpql;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
+public class RetriveWithJpql {
+	public static void main(String[] args) {
+
+		EntityManager entityManager = null;
+		
+	}
+}

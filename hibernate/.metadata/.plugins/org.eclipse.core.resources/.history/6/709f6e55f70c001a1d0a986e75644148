@@ -1,0 +1,6 @@
+package com.ustglobal.jpawithhibernat.manytoone;
+
+public class PencilBox {
+	private int bid;
+	private String brand;
+}
