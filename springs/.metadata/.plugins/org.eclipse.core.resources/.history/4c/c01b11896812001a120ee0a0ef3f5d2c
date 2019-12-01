@@ -1,0 +1,50 @@
+package com.ustglobal.empspringmvc.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ustglobal.empspringmvc.dao.EmployeeDAO;
+import com.ustglobal.empspringmvc.dto.EmployeeBean;
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Autowired
+	private EmployeeDAO dao;
+	
+	@Override
+	public EmployeeBean login(int id, String password) {
+return dao.login(id,password);
+		return null;
+	}
+
+	@Override
+	public boolean register(EmployeeBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteEmployee(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public EmployeeBean searchEmployee(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean updateEmployee(EmployeeBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean changepassword(int id, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

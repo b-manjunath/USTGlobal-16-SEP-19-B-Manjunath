@@ -1,0 +1,7 @@
+package com.ustglobal.springcore;
+
+public class LifeCycleClass {
+	public static void main(String[] args) {
+
+	}
+}

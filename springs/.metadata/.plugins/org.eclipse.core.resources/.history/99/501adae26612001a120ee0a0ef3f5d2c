@@ -1,0 +1,11 @@
+package com.ustglobal.empspringmvc.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.ustglobal.empspringmvc.service.EmployeeService;
+import com.ustglobal.empspringmvc.service.EmployeeServiceImpl;
+
+@Controller
+public class EmployeeController {
+	private EmployeeService service = new EmployeeServiceImpl();
+}

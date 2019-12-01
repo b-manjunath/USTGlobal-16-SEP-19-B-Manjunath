@@ -1,0 +1,51 @@
+package com.ustglobal.springmvc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.ustglobal.springmvc.beans.Employee;
+
+@Controller
+public class HelloController {
+	public void initBinder(WebDataBinder binder) {
+		
+	}
+	
+	
+	@RequestMapping(path="/hello")
+	public String hello(@RequestParam("name")String name,@RequestParam("id")int id,ModelMap map) {
+		map.addAttribute("msg","Hello World");
+		map.addAttribute("name",name);
+		map.addAttribute("id",id);
+		return "index";
+	}
+
+	@RequestMapping(path="/hi/{name}/{id}")
+	public String hi(@PathVariable("msg")String name,@PathVariable("name")String name1,@PathVariable("id")int id,HttpServletRequest request) {
+		request.setAttribute("msg", "Hello Java World");
+		request.setAttribute("name", name1);
+		request.setAttribute("id", id);
+		return "index";
+	}
+	@RequestMapping(path = "form")
+	public String formPage() {
+		return "form";
+	}
+	@RequestMapping(path="/form",method = RequestMethod.POST)
+	public String form(Employee employee,ModelMap map) {
+		map.addAttribute("id", employee.getId());
+		map.addAttribute("name", employee.getName());
+		map.addAttribute("password", employee.getPassword());
+		map.addAttribute("gender", employee.getGender());
+		map.addAttribute("doj", employee.getDoj());
+		
+		return "formoutput";
+	}
+}

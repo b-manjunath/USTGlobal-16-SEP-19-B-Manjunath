@@ -1,0 +1,75 @@
+package com.ustglobal.empspringmvc.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import com.ustglobal.empspringmvc.dto.EmployeeBean;
+
+public class EmployeeDaoImpl implements EmployeeDAO {
+
+	private EntityManagerFactory factory = Persistence.createEntityManagerFactory("employee-unit");
+
+
+	public EmployeeBean login(int id, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean register(EmployeeBean bean) {
+
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		try {
+			manager.persist(bean);
+			return true;			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+
+		}
+	}
+
+	public boolean deleteEmployee(int id) {
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction =manager.getTransaction();
+		transaction.begin();
+		EmployeeBean bean = manager.find(EmployeeBean.class, id);
+		manager.remove(bean);
+		transaction.commit();
+		return true;
+		
+	}
+
+	public EmployeeBean searchEmployee(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean updateEmployee(EmployeeBean bean) {
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction =manager.getTransaction();
+		transaction.begin();
+EmployeeBean employeeBean = manager.find(EmployeeBean.class, id);
+employeeBean.setName(bean.getName());
+employeeBean.setGender(bean.getGender());
+employeeBean.setPassword(bean.getPassword());
+employeeBean.setDoj(bean.getDoj());
+transaction.commit();
+		return true;
+	}
+
+	public boolean changepassword(int id, String password) {
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction =manager.getTransaction();
+		transaction.begin();
+		EmployeeBean bean =manager.find(EmployeeBean.class, id);
+		bean.setPassword(password);
+		transaction.commit();
+		return true;
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.ustglobal.config;
+
+import com.ustglobal.di.Hello;
+
+public class ConfigurationClass {
+	public Hello getHello() {
+		return new Hello();
+	}
+}

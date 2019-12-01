@@ -1,0 +1,19 @@
+package com.ustglobal.di;
+
+public class Hello {
+	private String msg;
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+	public void init() {
+		System.out.println("InIt Method Executed From Hello");
+	}
+	public void destroy() {
+		System.out.println("Destroy method executed from hello");
+	}
+}

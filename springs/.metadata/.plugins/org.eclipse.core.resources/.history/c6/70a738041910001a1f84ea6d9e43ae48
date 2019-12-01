@@ -1,0 +1,7 @@
+package com.ustglobal.di;
+
+public class Animal {
+public make sound() {
+	System.out.println("...................");
+}
+}

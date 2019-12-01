@@ -1,0 +1,10 @@
+package com.ustglobal.config;
+
+import com.ustglobal.di.Hello;
+
+public class ConfigurationClass {
+	@Bean
+	public Hello getHello() {
+		return new Hello();
+	}
+}

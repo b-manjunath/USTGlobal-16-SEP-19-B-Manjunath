@@ -1,0 +1,50 @@
+package com.ustglobal.empspringmvc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.ustglobal.empspringmvc.dto.EmployeeBean;
+import com.ustglobal.empspringmvc.service.EmployeeService;
+
+@Controller
+public class EmployeeController {
+	@Autowired
+	private EmployeeService service;
+	
+	@GetMapping("/login")
+	public String loginPage() {
+		return "login";
+	}
+	
+	@PostMapping("/login")
+	public String login(int id,String password,HttpServletRequest request) {
+		EmployeeBean bean = service.login(id, password);
+		//Invalid id or password
+	    if(bean==null) {
+	    	request.setAttribute("msg", "Invalid Credentials");
+	    	return "login";
+	    }
+	    //valid id and password
+	    else {
+	    	HttpSession session = request.getSession();
+	    	session.setAttribute("bean", bean);
+	    	return "home";
+	    }
+	}//end of login
+	
+	@GetMapping("/register")
+	public String registerPage() {
+		return "register";
+	}//end of registerPage()
+	
+	
+	
+	
+	
+	
+}
